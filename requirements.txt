@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+PyPDF2
+pdfplumber
+reportlab
+pdfminer.six
+openai
+deep-translator
+pytesseract
+Pillow
+python-multipart
+httpx>=0.24.1
