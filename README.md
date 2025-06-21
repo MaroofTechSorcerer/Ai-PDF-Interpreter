@@ -18,10 +18,6 @@ This project allows users to extract structured text from PDF files and display 
 
 ---
 
-## 📸 Screenshots
-
-> 
-
 ### 📥 Demo Video
 
 ![Demo Video](./demo/demo.mp4)
