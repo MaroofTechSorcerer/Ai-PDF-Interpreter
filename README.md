@@ -32,7 +32,6 @@ https://drive.google.com/file/d/1PwCT037v8ZbtpquYmL42oy4WLMzGsCMN/view?usp=drive
 ### ⚙️ Backend  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)  
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)  
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
 
 
 ---
