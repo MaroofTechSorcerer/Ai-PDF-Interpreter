@@ -105,8 +105,6 @@ FastAPI auto docs available at `http://localhost:8000/docs`
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MaroofTechSorcerer&theme=dark&hide_border=true&layout=compact)
 
----
-
 [![](https://visitcount.itsvg.in/api?id=MaroofTechSorcerer-AiPDF&icon=5&color=6)](https://visitcount.itsvg.in)
 
 ---
