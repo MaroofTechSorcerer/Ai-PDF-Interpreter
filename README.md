@@ -9,13 +9,37 @@ This project allows users to extract structured text from PDF files and display 
 
 ## 🚀 Features
 
-- 📤 Upload and analyze PDF files in real time  
-- 🔍 Extract and clean structured text from documents  
-- 📂 View uploaded documents and their metadata  
-- 💾 Download and retrieve processed results
-- 📊 Responsive UI built with React and TailwindCSS  
-- ⚡ FastAPI  
+### 📄 PDF Processing Features
 
+- 🧠 **PDF Text Extraction** – Extract all text content from PDF files  
+- ✨ **PDF Summarization** – Generate AI-powered summaries of PDF content  
+- 🌐 **PDF Translation** – Translate PDF content to any target language  
+- ✂️ **PDF Splitting** – Split PDFs by specific page ranges  
+- ➕ **PDF Merging** – Combine multiple PDF files into one document  
+- 🔍 **PDF Search** – Search within PDF content for keywords and phrases  
+- 🖼️ **PDF to Images Conversion** – Convert PDF pages into PNG image files  
+
+---
+
+### 📥 Download Features
+
+- 🗜️ **ZIP File Downloads** – Download extracted images or split PDFs as compressed archives  
+- 🧾 **Summary PDF Export** – Save AI-generated summaries as new PDF files  
+- 🖼️ **Image Downloads** – Download images converted from PDF pages  
+- 📄 **Split PDF Downloads** – Download each split part as an individual PDF  
+- 📎 **Merged PDF Downloads** – Download the final combined PDF document  
+- 📚 **Batch File Downloads** – Download multiple processed files together  
+
+---
+
+### 📁 File Output & Handling
+
+- 📤 **Multiple Output Formats** – Support for PDF, PNG, and ZIP outputs  
+- 🚀 **Static File Serving** – Direct download links served via FastAPI backend  
+- ✅ **File Validation** – Ensure PDF file types before processing  
+- 🧷 **Organized File Naming** – Automatically name output files for easy retrieval  
+
+---
 ---
 
 ### 📥 Demo Video
