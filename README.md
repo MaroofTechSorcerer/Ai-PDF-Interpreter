@@ -106,7 +106,7 @@ FastAPI auto docs available at `http://localhost:8000/docs`
 ## 📈 GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MaroofTechSorcerer&theme=dark&hide_border=true&include_all_commits=false&count_private=true)  
-![GitHub Streak](https://streak-stats.demolab.com?user=MaroofTechSorcerer&theme=dark&hide_border=true)  
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MaroofTechSorcerer&theme=dark&hide_border=true&layout=compact)
 
 ---
@@ -115,4 +115,4 @@ FastAPI auto docs available at `http://localhost:8000/docs`
 
 ---
 
-> 🛠️ Built with ❤️ using Python, FastAPI, React, TailwindCSS, and MongoDB.
+> 🛠️ Built with ❤️ using Python, FastAPI, React, TailwindCSS.
