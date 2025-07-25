@@ -1,0 +1,5 @@
+for runnning backend 
+cd backend then uvicorn main:app --reload
+
+for running front end 
+cd front end then npm start
