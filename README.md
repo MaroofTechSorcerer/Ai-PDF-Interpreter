@@ -42,6 +42,10 @@ This project allows users to extract structured text from PDF files and display 
 ---
 ---
 
+### 📥 Project Introduction Video
+
+https://drive.google.com/file/d/1XZ4mGZtqNKrEHHUqIBp9Qg6FP4gEvPz0/view?usp=sharing
+
 ### 📥 Demo Video
 
 https://drive.google.com/file/d/1PwCT037v8ZbtpquYmL42oy4WLMzGsCMN/view?usp=drive_link
