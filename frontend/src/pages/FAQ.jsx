@@ -1,3 +1,4 @@
+import { API_BASE } from "../config";
 import React from 'react';
 import { Box, Typography, Paper, Container, Accordion, AccordionSummary, AccordionDetails, Grow, Fade } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
