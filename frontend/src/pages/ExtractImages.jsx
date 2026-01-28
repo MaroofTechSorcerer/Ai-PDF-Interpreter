@@ -1,3 +1,4 @@
+import { API_BASE } from "../config";
 import React, { useState } from 'react';
 import { Box, Typography, Button, Paper, CircularProgress, Fade, Grow, Grid, Checkbox, FormControlLabel, Alert } from '@mui/material';
 import ImageIcon from '@mui/icons-material/Image';
