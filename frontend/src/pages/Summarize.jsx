@@ -26,7 +26,10 @@ function Summarize() {
     formData.append('pdf', pdf);
     formData.append('language', language);
     try {
-      const res = await axios.post('/summarize', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+      const res = await axios.post(`${API_BASE}/summarize`, formData, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
+
       setResult(res.data.summary);
     } catch (err) {
       setResult('Error: ' + (err.response?.data?.detail || err.message));
