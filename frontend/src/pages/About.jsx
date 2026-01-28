@@ -1,3 +1,4 @@
+import { API_BASE } from "../config";
 import React from 'react';
 import { Box, Typography, Paper, Container, List, ListItem, ListItemIcon, ListItemText, Grow, Fade } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
