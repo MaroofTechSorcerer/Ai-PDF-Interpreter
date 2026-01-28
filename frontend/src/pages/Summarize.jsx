@@ -40,7 +40,8 @@ function Summarize() {
   const handleSummarizeText = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('/summarize-text', { text, language });
+      const res = await axios.post(`${API_BASE}/summarize-text`, { text, language });
+
       setResult(res.data.summary);
     } catch (err) {
       setResult('Error: ' + (err.response?.data?.detail || err.message));
