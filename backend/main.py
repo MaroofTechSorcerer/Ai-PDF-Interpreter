@@ -14,7 +14,15 @@ from fastapi.staticfiles import StaticFiles
 import io
 import zipfile
 
-app = FastAPI()
+app = FastAPI(
+    title="AI PDF Interpreter API",
+    docs_url="/docs",
+    openapi_url="/openapi.json"
+)
+
+@app.get("/")
+def root():
+    return {"message": "FastAPI is running"}
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), 'outputs')
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -27,7 +35,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/outputs", StaticFiles(directory="outputs"), name="outputs")
+
 
 class TextRequest(BaseModel):
     text: str
@@ -295,3 +303,5 @@ def merge(files: list[UploadFile] = File(...)):
         return StreamingResponse(merged_io, media_type="application/pdf", headers={"Content-Disposition": "attachment; filename=merged.pdf"})
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) 
+
+app.mount("/outputs", StaticFiles(directory="outputs"), name="outputs")
