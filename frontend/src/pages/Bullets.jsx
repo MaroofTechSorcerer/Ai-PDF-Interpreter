@@ -25,7 +25,9 @@ function Bullets() {
     formData.append('pdf', pdf);
     formData.append('language', language);
     try {
-      const res = await axios.post('/bullets', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+const res = await axios.post(`${API_BASE}/bullets`, formData, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
       setResult(res.data.bullets);
     } catch (err) {
       setResult('Error: ' + (err.response?.data?.detail || err.message));
@@ -36,7 +38,7 @@ function Bullets() {
   const handleBulletsText = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('/bullets-text', { text, language });
+const res = await axios.post(`${API_BASE}/bullets-text`, { text, language });
       setResult(res.data.bullets);
     } catch (err) {
       setResult('Error: ' + (err.response?.data?.detail || err.message));
