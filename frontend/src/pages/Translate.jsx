@@ -25,7 +25,10 @@ function Translate() {
     formData.append('pdf', pdf);
     formData.append('target_lang', targetLang);
     try {
-      const res = await axios.post('/translate', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+      const res = await axios.post(`${API_BASE}/translate`, formData, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
+
       setResult(res.data.translated);
     } catch (err) {
       setResult('Error: ' + (err.response?.data?.detail || err.message));
@@ -36,7 +39,11 @@ function Translate() {
   const handleTranslateText = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('/translate-text', { text, target_lang: targetLang });
+      const res = await axios.post(`${API_BASE}/translate-text`, {
+  text,
+  target_lang: targetLang
+});
+
       setResult(res.data.translated);
     } catch (err) {
       setResult('Error: ' + (err.response?.data?.detail || err.message));
