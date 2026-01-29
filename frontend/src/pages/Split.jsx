@@ -25,7 +25,9 @@ function Split() {
     formData.append('pdf', pdf);
     formData.append('page_ranges', pageRanges);
     try {
-      const res = await axios.post('/split', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+const res = await axios.post(`${API_BASE}/split`, formData, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
       setResult(res.data.files);
       setShowResult(true);
     } catch (err) {
@@ -39,7 +41,9 @@ function Split() {
     if (result.length === 0) return;
     setZipLoading(true);
     try {
-      const res = await axios.post('/split-zip', result, { responseType: 'blob' });
+const res = await axios.post(`${API_BASE}/split-zip`, result, {
+  responseType: 'blob'
+});
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement('a');
       link.href = url;
