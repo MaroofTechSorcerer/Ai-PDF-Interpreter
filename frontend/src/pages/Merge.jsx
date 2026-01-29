@@ -31,7 +31,9 @@ function Merge() {
     const formData = new FormData();
     pdfs.forEach((pdf, idx) => formData.append('pdfs', pdf));
     try {
-      const res = await axios.post('/merge', formData, { responseType: 'blob' });
+const res = await axios.post(`${API_BASE}/merge`, formData, {
+  responseType: 'blob'
+});
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement('a');
       link.href = url;
