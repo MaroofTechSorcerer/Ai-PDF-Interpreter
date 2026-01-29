@@ -21,7 +21,9 @@ function ExportSummary() {
     setError('');
     setDownloaded(false);
     try {
-      const res = await axios.post('/export-summary', { summary }, { responseType: 'blob' });
+const res = await axios.post(`${API_BASE}/export-summary`, { summary }, {
+  responseType: 'blob'
+});
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement('a');
       link.href = url;
