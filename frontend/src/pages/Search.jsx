@@ -23,7 +23,9 @@ function Search() {
     formData.append('pdf', pdf);
     formData.append('query', query);
     try {
-      const res = await axios.post('/search', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+const res = await axios.post(`${API_BASE}/search`, formData, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
       setResult(res.data.results);
       setShowResult(true);
     } catch (err) {
