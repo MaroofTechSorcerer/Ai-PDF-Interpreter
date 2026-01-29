@@ -24,7 +24,9 @@ function ExtractImages() {
     const formData = new FormData();
     formData.append('pdf', pdf);
     try {
-      const res = await axios.post('/extract-images', formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+const res = await axios.post(`${API_BASE}/extract-images`, formData, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
       setImages(res.data.images);
       setSelected([]);
       setShowResult(true);
@@ -45,7 +47,9 @@ function ExtractImages() {
     const formData = new FormData();
     formData.append('pdf', pdf);
     try {
-      const res = await axios.post('/extract-images-direct', formData, { responseType: 'blob' });
+const res = await axios.post(`${API_BASE}/extract-images-direct`, formData, {
+  responseType: 'blob'
+});
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement('a');
       link.href = url;
@@ -63,7 +67,9 @@ function ExtractImages() {
     if (selected.length === 0) return;
     setZipSelectedLoading(true);
     try {
-      const res = await axios.post('/extract-images-selected-zip', selected, { responseType: 'blob' });
+const res = await axios.post(`${API_BASE}/extract-images-selected-zip`, selected, {
+  responseType: 'blob'
+});
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement('a');
       link.href = url;
